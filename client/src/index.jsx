@@ -1,5 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import NearbyHomes from './components/NearbyHomes';
+import { render } from 'react-dom';
+import App from './components/App';
 
-ReactDOM.render(<NearbyHomes />, document.getElementById('nearbyHomes'));
+
+// render(<NearbyHomes />, document.getElementById('nearbyHomes'));
+render(<App />, document.getElementById('app'));

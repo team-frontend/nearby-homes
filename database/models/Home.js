@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const db = require('./index');
+const db = require('../index');
 
-const NearbyHomes = db.define('NearbyHomes', {
+module.exports = db.define('homes', {
   dateOfPosting: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -47,7 +47,3 @@ const NearbyHomes = db.define('NearbyHomes', {
     allowNull: false,
   },
 });
-
-NearbyHomes.sync();
-
-module.exports = NearbyHomes;

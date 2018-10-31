@@ -7,8 +7,12 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js',
   },
+  resolve: { extensions: ['.js', '.jsx'] },
+
+
 
   module: {
+    
     rules: [
       {
         test: /\.jsx?/,

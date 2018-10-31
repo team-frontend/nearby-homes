@@ -37,3 +37,17 @@ npm install -g webpack
 npm install
 ```
 
+
+Start the server with:
+```sh
+npm start
+```
+## Running Tests
+
+This project is [Mocha](https://mochajs.org) based test You can run them by `npm test`
+## API
+
+/*  Execute this file from the command line by typing:
+ *    mysql -u <USER> < schema.sql
+ *    OR
+ *    mysql -u <USER> -p < schema.sql
