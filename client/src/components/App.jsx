@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       expanded: true,
       list: [],
+      zipCode: '',
     };
   }
 
@@ -16,14 +17,16 @@ class App extends Component {
     axios.get('/nearbyHomes').then((homes) => {
       this.setState({
         list: homes.data,
+        zipCode: homes.data[0].zipCode,
       });
     });
   }
 
   render() {
-    const { expanded, list } = this.state;
+    const { expanded, list, zipCode } = this.state;
+    // currently expanded is set to true until CSS parts are complete
     if (expanded) {
-      return <Neighborhood homes={list} />;
+      return <Neighborhood homes={list} zipCode={zipCode} />;
     }
     return <CollapsibleTitle />;
   }
