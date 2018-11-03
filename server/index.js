@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use('/nearbyHomes', homes);
 app.use('/api/homes', homes);
 
+app.use('/increaseLikes', homes);
+// homes/increaseLikes
 app.listen(port, () => {
   console.log(`server is running at: http://localhost:${port}`);
 });

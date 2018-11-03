@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import CollapsibleTitle from './CollapsibleTitle';
+// import CollapsibleTitle from './CollapsibleTitle';
 import Neighborhood from './Neighborhood';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      expanded: true,
       list: [],
       zipCode: '',
     };
@@ -23,12 +22,8 @@ class App extends Component {
   }
 
   render() {
-    const { expanded, list, zipCode } = this.state;
-    // currently expanded is set to true until CSS parts are complete
-    if (expanded) {
-      return <Neighborhood homes={list} zipCode={zipCode} />;
-    }
-    return <CollapsibleTitle />;
+    const { list, zipCode } = this.state;
+    return <Neighborhood homes={list} zipCode={zipCode} />;
   }
 }
 

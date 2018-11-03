@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Carousel from './Carousel';
+// const fs = require('fs');
 
 class Details extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: null,
       dateOfPosting: '',
       status: '',
       numberOfLikes: '',
@@ -16,13 +18,14 @@ class Details extends Component {
       cityName: '',
       stateName: '',
       zipCode: '',
-      loading: true,
     };
   }
 
   componentDidMount() {
     const home = this.props.home;
+    //  needs destructure
     this.setState({
+      id: home.id,
       dateOfPosting: home.dateOfPosting,
       status: home.status,
       numberOfLikes: home.numberOfLikes,
@@ -34,7 +37,6 @@ class Details extends Component {
       cityName: home.cityName,
       stateName: home.stateName,
       zipCode: home.zipCode,
-      loading: false,
     });
   }
 
@@ -43,47 +45,22 @@ class Details extends Component {
   }
 
   render() {
-    const { loading } = this.state;
-    if (loading) {
-      return <h1>loading ...</h1>;
-    }
+    const { index } = this.props;
     return (
-      <div className="contents">
-        <Carousel home={this.state} />
+      <div
+        className="main-container"
+        style={{
+          backgroundImage: `url("https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/assets/images/home_1.jpg")`,
+        }}
+      >
+        <div className="inner-container">
+          <div className="contents">
+            <Carousel home={this.state} index={index} />
+          </div>
+        </div>
       </div>
     );
   }
 }
 
 export default Details;
-
-/*
-    const {
-      dateOfPosting,
-      status,
-      numberOfLikes,
-      numberOfBathroom,
-      numberOfBedroom,
-      homeValue,
-      sqft,
-      streetName,
-      cityName,
-      stateName,
-      zipCode,
-    } = this.props.home;
-
-    // console.log(home)
-    this.setState({
-      dateOfPosting,
-      status,
-      numberOfLikes,
-      numberOfBathroom,
-      numberOfBedroom,
-      homeValue,
-      sqft,
-      streetName,
-      cityName,
-      stateName,
-      zipCode,
-    });
-*/
