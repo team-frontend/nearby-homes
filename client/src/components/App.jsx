@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-// import CollapsibleTitle from './CollapsibleTitle';
 import Neighborhood from './Neighborhood';
 
 class App extends Component {

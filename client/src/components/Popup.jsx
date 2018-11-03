@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import Carousel from './Carousel';
 
 class Popup extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.closeContentClick = this.closeContentClick.bind(this);
   }
-
-  closeContentClick(e) {}
 
   render() {
     const { toggleContentClick, handleTimePosted } = this.props;
@@ -33,7 +29,7 @@ class Popup extends Component {
         className="lightbox is-enabled lightbox--media-details"
       >
         <div id="lightbox-inner" className="lightbox-inner">
-          <div className="lightbox-close" onClick={this.closeContentClick}>
+          <div className="lightbox-close" onClick={toggleContentClick}>
             Close
             <i className="fa fa-times" />
             {/* <span className="icon" /> */}
@@ -47,7 +43,7 @@ class Popup extends Component {
                       <div className="media js-media-photo" data-photo-id="1">
                         <img
                           alt="Photo of Fog Harbor Fish House - San Francisco, CA, United States. Shellfish Platter"
-                          class="photo-box-img"
+                          className="photo-box-img"
                           src="https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/assets/images/home_1.jpg"
                         />
                       </div>

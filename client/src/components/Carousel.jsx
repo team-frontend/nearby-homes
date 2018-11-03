@@ -8,7 +8,7 @@ class Carousel extends Component {
     this.state = {
       showPopup: false,
     };
-    this.handleContentClick = this.handleContentClick.bind(this);
+    this.toggleContentClick = this.toggleContentClick.bind(this);
   }
 
   getPostedDateFromNow() {
@@ -39,8 +39,10 @@ class Carousel extends Component {
     );
   }
 
-  handleContentClick(e) {
-    this.setState({ showPopup: true });
+  toggleContentClick() {
+    this.setState((prevState) => ({
+      showPopup: !prevState.showPopup
+    }));
   }
 
   renderSwitch(status) {
@@ -82,19 +84,18 @@ class Carousel extends Component {
     if (showPopup) {
       return (
         <Popup
-          handleContentClick={this.handleContentClick.bind(this)}
+          toggleContentClick={this.toggleContentClick.bind(this)}
           home={this.props.home}
           handleTimePosted={this.handleTimePosted.bind(this)}
         />
       );
     }
     return (
-      <div className="assf">
+      <div className="favorite-button-asdf">
         <FavoriteButton id={id} />
         <div
           className="content-box-container"
-          id="zpid_31581073"
-          onClick={this.handleContentClick}
+          onClick={this.toggleContentClick}
         >
           <div className="photo-card-top">
             <ul className="zsg-list_inline zsg-photo-card-badge">

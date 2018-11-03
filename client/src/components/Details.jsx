@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Carousel from './Carousel';
-// const fs = require('fs');
-
 class Details extends Component {
   constructor(props) {
     super(props);
@@ -22,8 +20,7 @@ class Details extends Component {
   }
 
   componentDidMount() {
-    const home = this.props.home;
-    //  needs destructure
+    const { home } = this.props;
     this.setState({
       id: home.id,
       dateOfPosting: home.dateOfPosting,

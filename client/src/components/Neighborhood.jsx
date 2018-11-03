@@ -25,7 +25,7 @@ class Neighborhood extends Component {
     }));
   }
 
-  collapseToggle() {
+  toggleCollapse() {
     const { expanded } = this.state;
     if (expanded) {
       return <div className="h2-hdp-collapsible-title-collapsible" />;
@@ -58,7 +58,7 @@ class Neighborhood extends Component {
           >
             Neighborhood:
             {zipCode}
-            {this.collapseToggle()}
+            {this.toggleCollapse()}
           </h2>
           <div
             className="collapsible-content"
