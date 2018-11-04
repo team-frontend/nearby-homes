@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
-
+if (process.env.NODE_ENV !== 'production') {
+  const {whyDidYouUpdate} = require('why-did-you-update')
+  whyDidYouUpdate(React)
+}
 export default class FavoriteButton extends Component {
   constructor(props) {
     super(props);
@@ -17,24 +20,6 @@ export default class FavoriteButton extends Component {
       filled: !filled,
     });
   }
-
-  // increaseNumberOfLikes() {
-  //   const { id } = this.props;
-  //   axios
-  //     .post('/incLikes', {
-  //       id,
-  //     })
-  //     .then((res) => console.log(res.data));
-  // }
-
-  // decreaseNumberOfLikes() {
-  //   const { id } = this.props;
-  //   axios
-  //     .post('/decreaseLikes', {
-  //       id,
-  //     })
-  //     .then((res) => console.log(res.data));
-  // }
 
   render() {
     const { filled } = this.state;

@@ -12,8 +12,11 @@
 ## Table of Contents
 
 1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+2. [Getting Started](#getting-started)
+3. [Requirements](#requirements)
+4. [Development](#development)
+5. [API Endpoints](#api)
+
 
 ## Usage
 
@@ -36,18 +39,40 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
+Create the database `neighborhood` by executing this file from the command line by typing:
 
+```sh
+mysql -u root < database/schema.sql 
+```
 
 Start the server with:
 ```sh
 npm start
 ```
+
+Start your application with:
+```sh
+npm run dev
+```
+
 ## Running Tests
 
-This project is [Mocha](https://mochajs.org) based test You can run them by `npm test`
-## API
+This project is [Jest](https://mochajs.org) and [Enzyme](https://airbnb.io/enzyme/) based test You can run them by `npm run test:watch`
 
-/*  Execute this file from the command line by typing:
- *    mysql -u <USER> < schema.sql
- *    OR
- *    mysql -u <USER> -p < schema.sql
+## API Documentation
+
+##### Public End Points
+| Description                                                        | Endpoint                           |
+| ------------------------------------------------------------------ | ---------------------------------- |
+| [Get Info of Nearby Homes of a Home](#get-homeshomeidneaerbyhomes) | GET /api/homes/:homeId/nearbyHomes |
+
+## `GET /api/homes/:homeId/nearbyHomes
+
+Requests home's nearby homes information upon accessing from Zillow's designated endpoint
+
+### Example Request
+
+### Example Response
+
+
+

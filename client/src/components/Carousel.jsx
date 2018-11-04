@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
 import FavoriteButton from './FavoriteButton';
+import CarouselLastColumn from './CarouselLastColumn';
 
 class Carousel extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class Carousel extends Component {
   }
 
   handleTimePosted() {
+    // if u change any variable, you should put in function and setState 
     const { status } = this.props.home;
     if (status === 'OFF MARKET') {
       return <li className="photo-count">1 photo</li>;
@@ -58,7 +60,7 @@ class Carousel extends Component {
       case 'FOR RENT':
         return <span className="icon for-rent-market" />;
       case 'SOLD':
-        return <span className="icon sold-market" />;
+        return <span className="icon-sold-market" />;
       default:
         return null;
     }
@@ -79,8 +81,14 @@ class Carousel extends Component {
       stateName,
       zipCode,
     } = this.props.home;
-
+    // console.log(this.props)
+    const { lastCell } = this.props; 
     const { showPopup } = this.state;
+    // console.log(lastCell)
+    // should I condense it into one return statement ?
+    if (lastCell) {
+      return <CarouselLastColumn />
+    }
     if (showPopup) {
       return (
         <Popup

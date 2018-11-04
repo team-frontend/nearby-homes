@@ -3,6 +3,30 @@ body {
   font-family: Gotham, gotham, Verdana, sans-serif;
 }
 
+
+/****** main content *********/
+ 
+/* styles goes here... */
+ 
+/****** footer *********/
+ 
+/* styles go here... */
+
+
+/*---------------
+    #Header
+---------------*/
+/* header { } */
+
+/* header nav { } */
+
+/*---------------
+    #Slideshow
+---------------*/
+/* .slideshow { } */
+
+
+
 .title-container {
   max-width: 1024px;
 }
@@ -16,14 +40,15 @@ body {
   color: #fff
 }
 
-.inner-container {
-  
+.inner-container:hover {
+  /* -ms-transform: scale(1.5); IE 9 */
+  /* -webkit-transform: scale(1.5); Safari 3-8 */
+   
 }
+
 .favorite-button {
   content: "\f004";
-  /* width: 50px; */
-  /* border: 2px; */
-  /* border-color: aqua; */
+  left: 270px;
   font-size: 34px;
   /* text-shadow: 5px 5px 20px fff; */
   /* color: black; */
@@ -44,6 +69,7 @@ body {
   position: absolute;
   width:0;
   height:0;
+  left: 270px;
 }
 
 
@@ -108,6 +134,7 @@ content: "";
 
 .posted-date {
   /* overflow-y: hidden; */
+  font-size: 13px;
 }
 /* 
 .heart {
@@ -144,27 +171,65 @@ content: "";
 
 .icon {
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #e78267;
+  box-shadow: 0 0 0 3px #fff;
   display: inline-block;
-  height: 10px;
-  margin: 0 4px 0 1px;
-  width: 10px;
+  height: 8px;
+  margin: 0 7px 0 1px;
+  width: 8px;
+  /* background: #fff */
+  
 }
-
-.icon-auction-market {
-  background: red;
+/* .icon .inner-circle {
   border-radius: 50%;
   display: block;
   height: 100px;
   width: 100px;
+  background: #000
+} */
+.icon .off-market {
+  background: #808080
 }
 
-.icon-off-market {
-  background: #fff;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+.icon .sold-market {
+  background: red;
 }
+
+
+.icon .for-sale-market {
+  background: #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #fff;
+  display: inline-block;
+  height: 8px;
+  margin: 0 7px 0 1px;
+  width: 8px;
+}
+
+.icon .inner-circle .foreclosure-market {
+
+}
+
+.icon .auction-market {
+  background: #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #fff;
+  display: inline-block;
+  height: 8px;
+  margin: 0 7px 0 1px;
+  width: 8px;
+}
+
+.icon .off-market {
+
+}
+.icon .for-rent-market {
+
+}
+
+.inner-circle .sold-market {
+  background: #ffff00
+}
+
 
 .nearby-homes {
   margin-bottom: 0;
@@ -175,8 +240,9 @@ content: "";
   border-color: 0 #000;
 }
 
-.photo-card .property-baths:before,
-.photo-card .property-area:before {
+/* class="zsg-photo-card-spec" */
+.zsg-photo-card-spec .property-baths:before,
+.zsg-photo-card-spec .property-area:before {
   color: #ddd;
   content: '\B7';
   margin: 0 6px;
@@ -198,11 +264,14 @@ content: "";
   min-width: 360px;
   overflow-x: hidden;
   width: 661px;
+  height: 165px;
+  
 }
 
-.slick-slider {
+/* .slick-slider:hover {
   position: absolute;
-}
+  transform: scale(1.2);
+} */
 
 .zsg-content-component {
   width: 654px;
@@ -224,8 +293,10 @@ content: "";
 
 }
 
-.amin-container {
+.main-container {
   overflow: hidden;
+  background-size: contain;
+  /* background-repeat: no-repeat */
 }
 
 .zsg-icon-expando-left-disabled {
@@ -239,12 +310,13 @@ content: "";
   width: 25px;
   cursor: pointer;
   opacity: .3;
-  top: 90px;
+  top: 69px;
 }
 
 
 .zsg-photo-card-caption {
   margin-top: 20px;
+  left: 270px;
 }
 /* .zsg-photo-card-content:after, .zsg-photo-card-content:before */
 
@@ -274,7 +346,7 @@ content: "";
   width: 25px;
   cursor: pointer;
   left: 687px;
-  bottom: 103px;
+  bottom: 73px;
 }
 
 
@@ -310,21 +382,37 @@ content: "";
 }
 
 .zsg-photo-card-info {
-  font-size: 15px;
+
+
+  font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  /* javier
+  width: 179px;
+  display: inline-block;
+  vertical-align: sub; */
 }
 
+
+
 .zsg-photo-card-price {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.3;
+
+  /* javier */
+  /* display: inline-block;
+  vertical-align: bottom; */
 }
+
+
 /* class="zsg-photo-card-spec" */
 
 .zsg-photo-card-spec {
   /* font-size:1px; */
   margin: 0;
+  font-size: 12px;
 }
 
 .zsg-photo-card-spec-address {
@@ -404,6 +492,9 @@ ul.zsg-list_inline {
 .fal .fa-times {
   font-size:40px;
 }
+
+
+
 .media {
   overflow: hidden;
     height: 100%;

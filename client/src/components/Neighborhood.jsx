@@ -3,6 +3,7 @@ import Details from './Details';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 
+
 class Neighborhood extends Component {
   constructor(props) {
     super(props);
@@ -11,20 +12,21 @@ class Neighborhood extends Component {
       currIndex: 0,
     };
 
-    this.handleCollapsibleTitleClick = this.handleCollapsibleTitleClick.bind(
-      this
-    );
+    this.handleCollapsibleTitleClick = this.handleCollapsibleTitleClick.bind(this);
     this.goToNextSlide = this.goToNextSlide.bind(this);
     this.goToPrevSlide = this.goToPrevSlide.bind(this);
   }
 
   handleCollapsibleTitleClick(e) {
-    // e.preventDefault();
     this.setState((prevState) => ({
       expanded: !prevState.expanded,
+    
     }));
   }
 
+  // componentDidMount() {
+  
+  // }
   toggleCollapse() {
     const { expanded } = this.state;
     if (expanded) {
@@ -46,9 +48,10 @@ class Neighborhood extends Component {
   }
 
   render() {
-    const { homes, zipCode } = this.props;
+    const { homes, zipCode, isLastCell } = this.props;
     const { expanded, currIndex } = this.state;
-
+    // console.log(homes.length)
+    // console.log(this.state.isLastCell)
     return (
       <div className="title-container">
         <div className="zsg-layout">
@@ -75,7 +78,7 @@ class Neighborhood extends Component {
                   <div className="slick-list">
                     {homes.map((home, i) => {
                       if (i === currIndex || i === currIndex + 1) {
-                        return <Details home={home} key={home.id} />;
+                        return <Details home={home} key={home.id} isLastCell={isLastCell}/>;
                       }
                     })}
                   </div>

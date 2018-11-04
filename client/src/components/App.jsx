@@ -22,7 +22,9 @@ class App extends Component {
 
   render() {
     const { list, zipCode } = this.state;
-    return <Neighborhood homes={list} zipCode={zipCode} />;
+    const isOddLength = list.length % 2 === 1;
+    console.log('isOdd', isOddLength)
+    return <Neighborhood homes={list} zipCode={zipCode} lastCell={isOddLength}/>;
   }
 }
 

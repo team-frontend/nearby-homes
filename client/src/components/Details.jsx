@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from './Carousel';
+
 class Details extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +17,9 @@ class Details extends Component {
       cityName: '',
       stateName: '',
       zipCode: '',
+      
     };
+    console.log(this.props.lastCell)
   }
 
   componentDidMount() {
@@ -37,16 +40,26 @@ class Details extends Component {
     });
   }
 
+
+
   numberWithCommas(n) {
     return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 
+  /* 
+  <img 
+  src={this.state.photo} 
+  alt="" 
+  style={ isLoggedIn ? { display:'block'} : {display : 'none'} }  
+/>
+  */
+
   render() {
-    const { index } = this.props;
+    const { index, isLastCell } = this.props;
     return (
       <div
         className="main-container"
-        style={{
+        style={ isLastCell ? {backgroundImage: 'none'} : {
           backgroundImage: `url("https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/assets/images/home_1.jpg")`,
         }}
       >
