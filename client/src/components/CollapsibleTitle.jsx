@@ -1,27 +1,17 @@
-// import React from 'react';
+import React from 'react';
 
-// const CollapsibleTitle = ({
-//   handleCollapsibleTitleClick,
-//   zipCode,
-//   expanded,
-// }) => {
-//   if (expanded) {
-//     return (
-//       <div className="h2-hdp-collapsible-title-collapsible">
-//         <h2>
-//           Neighborhood:
-//           {zipCode}
-//         </h2>
-//         <div className="collapsible-content" style={{ display: 'block' }} />
-//       </div>
-//     );
-//   }
-//   return (
-//     <div
-//       className="h2-hdp-collapsible-title-collapsed"
-//       style={{ display: 'none' }}
-//     />
-//   );
-// };
+const CollapsibleTitle = ({ isExpanded, zipCode, toggleCollapsibleTitle }) => {
+  let className = 'collapsible-title';
+  isExpanded ? (className += '-collapsible') : (className += '-collapsed');
 
-// export default CollapsibleTitle;
+  return (
+    <>
+      <h2 className={className} onClick={toggleCollapsibleTitle}>
+        Neighborhood:
+        {zipCode}
+      </h2>
+    </>
+  );
+};
+
+export default CollapsibleTitle;
