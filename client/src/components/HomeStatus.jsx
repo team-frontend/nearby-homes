@@ -1,30 +1,39 @@
 import React from 'react';
 
+let res;
 const renderSwitch = (status) => {
   switch (status) {
     case 'FOR SALE':
-      return 'for-sale-market';
+      res = 'for-sale-market';
+      break;
     case 'FORECLOSURE':
-      return 'foreclosure-market';
+      res = 'foreclosure-market';
+      break;
     case 'AUCTION':
-      return 'auction-market';
+      res = 'auction-market';
+      break;
     case 'OFF MARKET':
-      return 'off-market';
+      res = 'off-market';
+      break;
     case 'FOR RENT':
-      return 'for-rent-market';
+      res = 'for-rent-market';
+      break;
     case 'SOLD':
-      return 'sold-market';
+      res = 'sold-market';
+      break;
     default:
       return null;
   }
 };
 
-const HomeStatus = (status) => {
-  let className = 'icon ';
+const HomeStatus = ({ status }) => {
+  renderSwitch(status);
+  const iconStatus = res;
+  const className = `icon-${iconStatus}`;
   return (
     <>
-      <span className={(className += renderSwitch(status))} />
-      <span className="home-status">status</span>
+      <span className={className} />
+      <span className="home-status">{status}</span>
     </>
   );
 };

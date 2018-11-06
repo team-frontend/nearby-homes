@@ -11,6 +11,8 @@ const Carousel = ({
   goToPrevSlide,
   toggleContent,
 }) => {
+  const isOddLen = homes.length % 2 === 1;
+
   return (
     <>
       <h4 className="nearby-homes">NEARBY HOMES</h4>
@@ -19,7 +21,11 @@ const Carousel = ({
           <LeftArrow currIndex={currIndex} goToPrevSlide={goToPrevSlide} />
           <div className="nearby-homes-list">
             {homes.map((home, i) => {
+              const isLastCell = i === homes.length - 1;
               if (i === currIndex || i === currIndex + 1) {
+                if (isOddLen && isLastCell) {
+                  return <div />;
+                }
                 return (
                   <Home
                     home={home}
@@ -35,6 +41,7 @@ const Carousel = ({
             currIndex={currIndex}
             goToNextSlide={goToNextSlide}
             listLength={homes.length}
+            isOddLen={isOddLen}
           />
         </div>
       </div>

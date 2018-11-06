@@ -6,7 +6,7 @@ import LikeButton from './LikeButton';
 
 const addCommas = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-const HomeDetail = ({ home, showPopup, toggleContent }) => {
+const HomeDetail = ({ home, showPopup, toggleContent, backgroundImg }) => {
   const homeValue = addCommas(home.homeValue);
   const sqft = addCommas(home.sqft);
 
@@ -16,6 +16,7 @@ const HomeDetail = ({ home, showPopup, toggleContent }) => {
       toggleContent={toggleContent}
       homeValue={homeValue}
       sqft={sqft}
+      backgroundImg={backgroundImg}
     />
   ) : (
     <>
@@ -34,7 +35,7 @@ const HomeDetail = ({ home, showPopup, toggleContent }) => {
           </h4>
           <p className="home-photo-card-spec">
             <span className="home-photo-card-price">${homeValue} </span>
-            <span className="home-photo-card-info">
+            <span className="home-photo-card-spec">
               <span>
                 <span className="property-beds">
                   {home.numberOfBedroom} bds

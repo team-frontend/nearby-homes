@@ -1,26 +1,5 @@
 import React, { Component } from 'react';
 
-// const LikeButton = ({ isLiked, toggleLikeButton}) => {
-//   let heartClassName = 'fas fa-heart';
-//   let buttonClassName = 'like-button';
-
-//   isLiked === false ? heartClassName : (heartClassName += ' .isLiked');
-//   isLiked === false ? buttonClassName : (buttonClassName += '-isLiked');
-//   return (
-//     <div className="zsg-photo-card-actions">
-//       <div
-//         className={buttonClassName}
-//         type="button"
-//         aria-label="Favorite to save"
-//       >
-//         <i className={heartClassName} onClick={toggleLikeButton} />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default LikeButton;
-
 export default class LikeButton extends Component {
   constructor(props) {
     super(props);

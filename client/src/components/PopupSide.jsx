@@ -15,14 +15,14 @@ const PopupSide = ({ home, homeValue, sqft }) => {
           <div className="media-info_container">
             <div className="media-info_item media-info_caption" />
 
-            <div className="zsg-photo-card-content zsg-aspect-ratio-content">
-              <div className="zsg-photo-card-caption">
-                <h4 className="zsg-photo-card-spec">
+            <div className="home-photo-card-content home-aspect-ratio-content">
+              <div className="home-photo-card-caption">
+                <h4 className="home-photo-card-spec">
                   <span>{home.status}</span>
                 </h4>
-                <span className="zsg-photo-card-price">${homeValue} </span>
-                <p className="zsg-photo-card-spec">
-                  <span className="zsg-photo-card-info">
+                <span className="home-photo-card-price">${homeValue} </span>
+                <p className="home-photo-card-spec">
+                  <span className="home-photo-card-info">
                     <span>
                       <span className="property-beds">
                         {home.numberOfBedroom} bds
