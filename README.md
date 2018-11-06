@@ -4,10 +4,9 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/team-frontend/image-carousel
+  - https://github.com/team-frontend/detailed-part
+  - https://github.com/team-frontend/mortgage-calculator
 
 ## Table of Contents
 
@@ -66,7 +65,7 @@ This project is [Jest](https://mochajs.org) and [Enzyme](https://airbnb.io/enzym
 | ------------------------------------------------------------------ | ---------------------------------- |
 | [Get Info of Nearby Homes of a Home](#get-homeshomeidneaerbyhomes) | GET /api/homes/:homeId/nearbyHomes |
 
-## `GET /api/homes/:homeId/nearbyHomes
+## GET /api/homes/:homeId/nearbyHomes
 
 Requests home's nearby homes information upon accessing from Zillow's designated endpoint
 
