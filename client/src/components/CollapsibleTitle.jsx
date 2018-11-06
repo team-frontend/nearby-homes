@@ -1,10 +1,17 @@
 import React from 'react';
 
-export default function CollapsibleTitles({ zipCode }) {
+const CollapsibleTitle = ({ isExpanded, zipCode, toggleCollapsibleTitle }) => {
+  let className = 'collapsible-title';
+  isExpanded ? (className += '-collapsible') : (className += '-collapsed');
+
   return (
-    <div>
-      <h2>Neighborhood</h2>
-      <div className="neighborhood">{`Neighborhood: ${zipCode}`}</div>
-    </div>
+    <>
+      <h2 className={className} onClick={toggleCollapsibleTitle}>
+        Neighborhood:
+        {zipCode}
+      </h2>
+    </>
   );
-}
+};
+
+export default CollapsibleTitle;

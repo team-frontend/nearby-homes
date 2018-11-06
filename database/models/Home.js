@@ -46,4 +46,8 @@ module.exports = db.define('homes', {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  // homeImage: {
+  //   type: Sequelize.BLOB('long'),
+  //   allowNull: false,
+  // },
 });
