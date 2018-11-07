@@ -2,7 +2,9 @@ import React from 'react';
 import PopupMain from './PopupMain';
 import PopupSide from './PopupSide';
 
-const Popup = ({ home, toggleContent, homeValue, sqft }) => (
+const Popup = ({ home, toggleContent, homeValue, sqft }) => {
+  console.log({home})
+  return (
   <div id="lightbox" className="lightbox is-enabled lightbox--media-details">
     <div id="lightbox-inner" className="lightbox-inner">
       <div className="lightbox-close" onClick={toggleContent}>
@@ -24,6 +26,6 @@ const Popup = ({ home, toggleContent, homeValue, sqft }) => (
       </div>
     </div>
   </div>
-);
+)};
 
 export default Popup;

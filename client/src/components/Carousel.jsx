@@ -10,7 +10,6 @@ const Carousel = ({
   goToNextSlide,
   goToPrevSlide,
   toggleContent,
-  isFirstRender,
 }) => {
   const isOddLen = homes.length % 2 === 1;
 
@@ -33,7 +32,6 @@ const Carousel = ({
                     key={home.id}
                     showPopup={showPopup}
                     toggleContent={toggleContent}
-                    isFirstRender={isFirstRender}
                   />
                 );
               }

@@ -35,8 +35,9 @@ class App extends Component {
     });
   }
 
-  toggleContent() {
+  toggleContent(e) {
     const { showPopup } = this.state;
+    console.log(e.target)
     this.setState({
       showPopup: !showPopup,
     });
@@ -56,7 +57,7 @@ class App extends Component {
 
   render() {
     const {
-      currIndex, isExpanded, showPopup, list, zipCode, isFirstRender,
+      currIndex, isExpanded, showPopup, list, zipCode,
     } = this.state;
     return (
       <div className="collapsible-title-container">
@@ -75,7 +76,6 @@ class App extends Component {
                 goToNextSlide={this.goToNextSlide}
                 goToPrevSlide={this.goToPrevSlide}
                 toggleContent={this.toggleContent}
-                isFirstRender={isFirstRender}
               />
             </div>
           ) : (

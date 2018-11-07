@@ -1,7 +1,9 @@
 import React from 'react';
 import HomeDetail from './HomeDetail';
 
-const Home = ({home, showPopup, toggleContent, isOddLen, isLastCell }) => (
+const Home = ({home, showPopup, toggleContent, isOddLen, isLastCell }) => {
+  console.log('inside home', home.homeImage)
+  return (
   <div
     className="home-main-container"
     style={{
@@ -20,6 +22,7 @@ const Home = ({home, showPopup, toggleContent, isOddLen, isLastCell }) => (
       </div>
     </div>
   </div>
-);
+)};
 
 export default Home;
+

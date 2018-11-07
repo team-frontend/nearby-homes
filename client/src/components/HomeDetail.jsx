@@ -9,7 +9,7 @@ const addCommas = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 const HomeDetail = ({ home, showPopup, toggleContent }) => {
   const homeValue = addCommas(home.homeValue);
   const sqft = addCommas(home.sqft);
-
+  
   return showPopup ? (
     <Popup home={home} toggleContent={toggleContent} homeValue={homeValue} sqft={sqft} />
   ) : (
