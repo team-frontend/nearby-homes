@@ -10,9 +10,8 @@ class App extends Component {
       currIndex: 0,
       list: [],
       zipCode: '',
-      isExpanded: true,
+      isExpanded: false,
       showPopup: false,
-      isLiked: false,
     };
     this.toggleCollapsibleTitle = this.toggleCollapsibleTitle.bind(this);
     this.toggleContent = this.toggleContent.bind(this);
@@ -21,7 +20,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('/nearbyHomes').then((homes) => {
+    axios.get('/nearbyHomes', {}).then((homes) => {
       this.setState({
         list: homes.data,
         zipCode: homes.data[0].zipCode,
@@ -30,31 +29,35 @@ class App extends Component {
   }
 
   toggleCollapsibleTitle() {
-    this.setState((prevState) => ({
-      isExpanded: !prevState.isExpanded,
-    }));
+    const { isExpanded } = this.state;
+    this.setState({
+      isExpanded: !isExpanded,
+    });
   }
 
   toggleContent() {
-    this.setState((prevState) => ({
-      showPopup: !prevState.showPopup,
-    }));
+    const { showPopup } = this.state;
+    this.setState({
+      showPopup: !showPopup,
+    });
   }
 
   goToNextSlide() {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       currIndex: prevState.currIndex + 1,
     }));
   }
 
   goToPrevSlide() {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       currIndex: prevState.currIndex - 1,
     }));
   }
 
   render() {
-    const { currIndex, isExpanded, showPopup, list, zipCode } = this.state;
+    const {
+      currIndex, isExpanded, showPopup, list, zipCode, isFirstRender,
+    } = this.state;
     return (
       <div className="collapsible-title-container">
         <div className="collapsible-title-inner-layout">
@@ -63,7 +66,7 @@ class App extends Component {
             zipCode={zipCode}
             toggleCollapsibleTitle={this.toggleCollapsibleTitle}
           />
-          {!isExpanded ? (
+          {isExpanded ? (
             <div className="collapsible-content">
               <Carousel
                 homes={list}
@@ -72,6 +75,7 @@ class App extends Component {
                 goToNextSlide={this.goToNextSlide}
                 goToPrevSlide={this.goToPrevSlide}
                 toggleContent={this.toggleContent}
+                isFirstRender={isFirstRender}
               />
             </div>
           ) : (

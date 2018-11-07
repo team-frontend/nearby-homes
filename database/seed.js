@@ -1,32 +1,17 @@
 const faker = require('faker');
-// const path = require('path');
-// const fs = require('fs');
 const homes = require('./models/Home');
 
-// const homesPath = path.join(__dirname, '../client/dist/public/assets/images/homes/');
-// const homeImages = fs.readdirSync(homesPath);
-// console.log('homeimage', homeImages)
-// const homeImages = fs.readdirSync(Root);
-// console.log('HELLO WORLD', path.join(__dirname, '../public/assets/images/homes'));
 const fakeHomes = [];
-const rockvilleZipCodes = [
-  20847,
-  20848,
-  20849,
-  20850,
-  20851,
-  20852,
-  20853,
-  20854,
-  20857,
-  20877,
-];
+const rockvilleZipCodes = [20847, 20848, 20849, 20850, 20851, 20852, 20853, 20854, 20857, 20877];
 
 const selectRandomElement = (array) => {
   const randomIdx = Math.floor(Math.random() * array.length);
   return array[randomIdx];
 };
-// console.log(homeImages)
+
+const createRandomNum = () => Math.floor(Math.random() * 20) + 1;
+
+const selectRandomPhoto = () => `https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/assets/images/home_${createRandomNum()}.jpg`;
 
 const createFakeHomes = function createFakeHomes() {
   for (let i = 0; i < 100; i += 1) {
@@ -61,16 +46,15 @@ const createFakeHomes = function createFakeHomes() {
       cityName: 'Rockville',
       stateName: 'MD',
       zipCode: selectRandomElement(rockvilleZipCodes),
-      // homeImage: `${homesPath}${selectRandomElement(homeImages)}`,
+      homeImage: selectRandomPhoto(),
     };
     fakeHomes.push(home);
   }
 };
 
-const seed = () =>
-  homes.sync({ force: true }).then(() => {
-    createFakeHomes();
-    homes.bulkCreate(fakeHomes);
-  });
+const seed = () => homes.sync({ force: true }).then(() => {
+  createFakeHomes();
+  homes.bulkCreate(fakeHomes);
+});
 
 seed();

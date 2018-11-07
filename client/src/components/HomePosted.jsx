@@ -10,7 +10,7 @@ const getPostedDateFromNow = (dateOfPosting) => {
     dateArr[2],
     dateArr[3],
     dateArr[4],
-    dateArr[5]
+    dateArr[5],
   );
   return Math.floor((currTime - dateFormat) / MS_PER_DAY);
 };

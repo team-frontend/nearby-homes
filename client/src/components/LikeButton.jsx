@@ -15,6 +15,7 @@ export default class LikeButton extends Component {
       isLiked: !isLiked,
     });
   }
+
   render() {
     const { isLiked } = this.state;
     let heartClassName = 'fas fa-heart';
@@ -25,11 +26,7 @@ export default class LikeButton extends Component {
 
     return (
       <div className="zsg-photo-card-actions">
-        <div
-          className={buttonClassName}
-          type="button"
-          aria-label="Favorite to save"
-        >
+        <div className={buttonClassName} type="button" aria-label="Favorite to save">
           <i className={heartClassName} onClick={this.toggleLikeButton} />
         </div>
       </div>

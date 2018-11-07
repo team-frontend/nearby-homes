@@ -5,7 +5,7 @@ const path = require('path');
 const homes = require('./routes/api/homes');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3003;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -17,8 +17,6 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use('/nearbyHomes', homes);
 app.use('/api/homes', homes);
 
-app.use('/increaseLikes', homes);
-// homes/increaseLikes
 app.listen(port, () => {
   console.log(`server is running at: http://localhost:${port}`);
 });
