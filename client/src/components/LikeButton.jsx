@@ -6,15 +6,14 @@ class LikeButton extends Component {
     this.state = {
       isLiked: false,
     };
-    this.toggleLikeButton = this.toggleLikeButton.bind(this);
   }
 
-  toggleLikeButton() {
+  toggleLikeButton = () => {
     const { isLiked } = this.state;
     this.setState({
       isLiked: !isLiked,
     });
-  }
+  };
 
   render() {
     const { isLiked } = this.state;

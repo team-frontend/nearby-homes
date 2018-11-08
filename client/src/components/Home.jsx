@@ -1,28 +1,33 @@
 import React from 'react';
 import HomeDetail from './HomeDetail';
 
-const Home = ({home, showPopup, toggleContent, isOddLen, isLastCell }) => {
-  console.log('inside home', home.homeImage)
+const addCommas = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+const Home = ({ home, handleContentClick, isOddLen, isLastCell }) => {
+  const homeValue = addCommas(home.homeValue);
+  const sqft = addCommas(home.sqft);
+
   return (
-  <div
-    className="home-main-container"
-    style={{
-      backgroundImage: `url(${home.homeImage})`,
-    }}
-  >
-    <div className="home-inner-container">
-      <div className="home-contents">
-        <HomeDetail
-          home={home}
-          showPopup={showPopup}
-          toggleContent={toggleContent}
-          isLastCell={isLastCell}
-          isOddLen={isOddLen}
-        />
+    <div
+      className="home-main-container"
+      style={{
+        backgroundImage: `url(${home.homeImage})`,
+      }}
+    >
+      <div className="home-inner-container">
+        <div className="home-contents">
+          <HomeDetail
+            home={home}
+            handleContentClick={handleContentClick}
+            isLastCell={isLastCell}
+            isOddLen={isOddLen}
+            homeValue={homeValue}
+            sqft={sqft}
+          />
+        </div>
       </div>
     </div>
-  </div>
-)};
+  );
+};
 
 export default Home;
-

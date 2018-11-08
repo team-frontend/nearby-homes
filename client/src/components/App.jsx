@@ -12,11 +12,8 @@ class App extends Component {
       zipCode: '',
       isExpanded: false,
       showPopup: false,
+      clickedContent: '',
     };
-    this.toggleCollapsibleTitle = this.toggleCollapsibleTitle.bind(this);
-    this.toggleContent = this.toggleContent.bind(this);
-    this.goToNextSlide = this.goToNextSlide.bind(this);
-    this.goToPrevSlide = this.goToPrevSlide.bind(this);
   }
 
   componentDidMount() {
@@ -28,37 +25,43 @@ class App extends Component {
     });
   }
 
-  toggleCollapsibleTitle() {
+  toggleCollapsibleTitle = () => {
     const { isExpanded } = this.state;
     this.setState({
       isExpanded: !isExpanded,
     });
-  }
+  };
 
-  toggleContent(e) {
+  handleContentCloseClick = () => {
     const { showPopup } = this.state;
-    console.log(e.target)
-    this.setState({
-      showPopup: !showPopup,
-    });
-  }
+    this.setState({ showPopup: false });
+  };
 
-  goToNextSlide() {
+  handleContentClick = param => (e) => {
+    const { clickedContent, showPopup } = this.state;
+    this.setState({
+      clickedContent: param,
+      showPopup: true,
+    });
+  };
+
+  goToNextSlide = () => {
     this.setState(prevState => ({
       currIndex: prevState.currIndex + 1,
     }));
-  }
+  };
 
-  goToPrevSlide() {
+  goToPrevSlide = () => {
     this.setState(prevState => ({
       currIndex: prevState.currIndex - 1,
     }));
-  }
+  };
 
   render() {
     const {
-      currIndex, isExpanded, showPopup, list, zipCode,
+      currIndex, isExpanded, showPopup, list, zipCode, clickedContent,
     } = this.state;
+
     return (
       <div className="collapsible-title-container">
         <div className="collapsible-title-inner-layout">
@@ -73,9 +76,11 @@ class App extends Component {
                 homes={list}
                 currIndex={currIndex}
                 showPopup={showPopup}
+                clickedContent={clickedContent}
                 goToNextSlide={this.goToNextSlide}
                 goToPrevSlide={this.goToPrevSlide}
-                toggleContent={this.toggleContent}
+                handleContentClick={this.handleContentClick}
+                handleContentCloseClick={this.handleContentCloseClick}
               />
             </div>
           ) : (

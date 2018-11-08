@@ -2,12 +2,10 @@ import React from 'react';
 import PopupMain from './PopupMain';
 import PopupSide from './PopupSide';
 
-const Popup = ({ home, toggleContent, homeValue, sqft }) => {
-  console.log({home})
-  return (
+const Popup = ({ clickedContent, handleContentCloseClick }) => (
   <div id="lightbox" className="lightbox is-enabled lightbox--media-details">
     <div id="lightbox-inner" className="lightbox-inner">
-      <div className="lightbox-close" onClick={toggleContent}>
+      <div className="lightbox-close" onClick={handleContentCloseClick} style={{ color: '#fff' }}>
         Close
         <i className="fa fa-times" />
       </div>
@@ -16,9 +14,9 @@ const Popup = ({ home, toggleContent, homeValue, sqft }) => {
           <div className="media-details_container">
             <div className="media-container js-media-container">
               <div className="media-details-grid">
-                <PopupMain backgroundImg={home.homeImage} />
+                <PopupMain backgroundImg={clickedContent.homeImage} />
 
-                <PopupSide home={home} homeValue={homeValue} sqft={sqft} />
+                <PopupSide home={clickedContent} />
               </div>
             </div>
           </div>
@@ -26,6 +24,5 @@ const Popup = ({ home, toggleContent, homeValue, sqft }) => {
       </div>
     </div>
   </div>
-)};
-
+);
 export default Popup;

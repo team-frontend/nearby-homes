@@ -2,6 +2,7 @@ import React from 'react';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 import Home from './Home';
+import Popup from './Popup';
 
 const Carousel = ({
   homes,
@@ -9,11 +10,19 @@ const Carousel = ({
   showPopup,
   goToNextSlide,
   goToPrevSlide,
-  toggleContent,
+  handleContentClick,
+  clickedContent,
+  handleContentCloseClick,
 }) => {
   const isOddLen = homes.length % 2 === 1;
 
-  return (
+  return showPopup ? (
+    <Popup
+      handleContentClick={handleContentClick}
+      clickedContent={clickedContent}
+      handleContentCloseClick={handleContentCloseClick}
+    />
+  ) : (
     <>
       <h4 className="nearby-homes">NEARBY HOMES</h4>
       <div className="nearby-homes-container">
@@ -31,7 +40,9 @@ const Carousel = ({
                     home={home}
                     key={home.id}
                     showPopup={showPopup}
-                    toggleContent={toggleContent}
+                    clickedContent={clickedContent}
+                    handleContentClick={handleContentClick}
+                    handleContentCloseClick={handleContentCloseClick}
                   />
                 );
               }

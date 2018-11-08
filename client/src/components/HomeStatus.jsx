@@ -1,6 +1,7 @@
 import React from 'react';
 
 let res;
+
 const renderSwitch = (status) => {
   switch (status) {
     case 'FOR SALE':
