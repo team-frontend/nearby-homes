@@ -1,0 +1,2458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component mount correctly 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": App {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 50,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 49,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": [Circular],
+          "index": 0,
+          "key": null,
+          "lastEffect": [Circular],
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="collapsible-title-container"
+                  >
+                    <div
+                      class="collapsible-title-inner-layout"
+                    >
+                      <h2
+                        class="collapsible-title-collapsed"
+                      >
+                        Neighborhood:
+                        
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="collapsible-title-container"
+                >
+                  <div
+                    class="collapsible-title-inner-layout"
+                  >
+                    <h2
+                      class="collapsible-title-collapsed"
+                    >
+                      Neighborhood:
+                      
+                    </h2>
+                    
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Set {},
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Map {},
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": -1,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 51,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 52,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 53,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 55,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 56,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": null,
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": null,
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": "Neighborhood:",
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": "Neighborhood:",
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 57,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": null,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": "",
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": "",
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": ,
+                    "tag": 6,
+                    "treeBaseDuration": 0,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "stateNode": Neighborhood:,
+                  "tag": 6,
+                  "treeBaseDuration": 0,
+                  "type": null,
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "h2",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    "Neighborhood:",
+                    "",
+                  ],
+                  "className": "collapsible-title-collapsed",
+                  "onClick": [Function],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    "Neighborhood:",
+                    "",
+                  ],
+                  "className": "collapsible-title-collapsed",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <h2
+                  class="collapsible-title-collapsed"
+                >
+                  Neighborhood:
+                  
+                </h2>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "h2",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 1,
+              "elementType": [Function],
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "isExpanded": false,
+                "toggleCollapsibleTitle": [Function],
+                "zipCode": "",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "isExpanded": false,
+                "toggleCollapsibleTitle": [Function],
+                "zipCode": "",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": FiberNode {
+                "_debugID": 54,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": "",
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": "",
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": ,
+                "tag": 6,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": null,
+              },
+              "stateNode": null,
+              "tag": 0,
+              "treeBaseDuration": 0,
+              "type": [Function],
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "div",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <CollapsibleTitle
+                  isExpanded={false}
+                  toggleCollapsibleTitle={[Function]}
+                  zipCode=""
+                />,
+                "",
+              ],
+              "className": "collapsible-title-inner-layout",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": Array [
+                <CollapsibleTitle
+                  isExpanded={false}
+                  toggleCollapsibleTitle={[Function]}
+                  zipCode=""
+                />,
+                "",
+              ],
+              "className": "collapsible-title-inner-layout",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": <div
+              class="collapsible-title-inner-layout"
+            >
+              <h2
+                class="collapsible-title-collapsed"
+              >
+                Neighborhood:
+                
+              </h2>
+              
+            </div>,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 0,
+          "elementType": "div",
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": <div
+              className="collapsible-title-inner-layout"
+            >
+              <CollapsibleTitle
+                isExpanded={false}
+                toggleCollapsibleTitle={[Function]}
+                zipCode=""
+              />
+              
+            </div>,
+            "className": "collapsible-title-container",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": <div
+              className="collapsible-title-inner-layout"
+            >
+              <CollapsibleTitle
+                isExpanded={false}
+                toggleCollapsibleTitle={[Function]}
+                zipCode=""
+              />
+              
+            </div>,
+            "className": "collapsible-title-container",
+          },
+          "ref": null,
+          "return": [Circular],
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": <div
+            class="collapsible-title-container"
+          >
+            <div
+              class="collapsible-title-inner-layout"
+            >
+              <h2
+                class="collapsible-title-collapsed"
+              >
+                Neighborhood:
+                
+              </h2>
+              
+            </div>
+          </div>,
+          "tag": 5,
+          "treeBaseDuration": 0,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "childExpirationTime": 0,
+        "effectTag": 5,
+        "elementType": [Function],
+        "expirationTime": 0,
+        "firstContextDependency": null,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {},
+        "memoizedState": Object {
+          "clickedContent": "",
+          "currIndex": 0,
+          "isExpanded": false,
+          "list": Array [],
+          "showPopup": false,
+          "zipCode": "",
+        },
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {},
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 49,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": [Circular],
+          "index": 0,
+          "key": null,
+          "lastEffect": [Circular],
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="collapsible-title-container"
+                  >
+                    <div
+                      class="collapsible-title-inner-layout"
+                    >
+                      <h2
+                        class="collapsible-title-collapsed"
+                      >
+                        Neighborhood:
+                        
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="collapsible-title-container"
+                >
+                  <div
+                    class="collapsible-title-inner-layout"
+                  >
+                    <h2
+                      class="collapsible-title-collapsed"
+                    >
+                      Neighborhood:
+                      
+                    </h2>
+                    
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Set {},
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Map {},
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 1,
+        "treeBaseDuration": 0,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "goToNextSlide": [Function],
+      "goToPrevSlide": [Function],
+      "handleContentClick": [Function],
+      "handleContentCloseClick": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {
+        "clickedContent": "",
+        "currIndex": 0,
+        "isExpanded": false,
+        "list": Array [],
+        "showPopup": false,
+        "zipCode": "",
+      },
+      "toggleCollapsibleTitle": [Function],
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="collapsible-title-container"
+      >
+        <div
+          class="collapsible-title-inner-layout"
+        >
+          <h2
+            class="collapsible-title-collapsed"
+          >
+            Neighborhood:
+            
+          </h2>
+          
+        </div>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="collapsible-title-inner-layout"
+        >
+          <CollapsibleTitle
+            isExpanded={false}
+            toggleCollapsibleTitle={[Function]}
+            zipCode=""
+          />
+          
+        </div>,
+        "className": "collapsible-title-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="collapsible-title-inner-layout"
+          >
+            <h2
+              class="collapsible-title-collapsed"
+            >
+              Neighborhood:
+              
+            </h2>
+            
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <CollapsibleTitle
+                isExpanded={false}
+                toggleCollapsibleTitle={[Function]}
+                zipCode=""
+              />,
+              "",
+            ],
+            "className": "collapsible-title-inner-layout",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "isExpanded": false,
+                "toggleCollapsibleTitle": [Function],
+                "zipCode": "",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <h2
+                  class="collapsible-title-collapsed"
+                >
+                  Neighborhood:
+                  
+                </h2>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Neighborhood:",
+                    "",
+                  ],
+                  "className": "collapsible-title-collapsed",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Neighborhood:",
+                  "",
+                ],
+                "type": "h2",
+              },
+              "type": [Function],
+            },
+            "",
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": App {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 50,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 49,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="collapsible-title-container"
+                    >
+                      <div
+                        class="collapsible-title-inner-layout"
+                      >
+                        <h2
+                          class="collapsible-title-collapsed"
+                        >
+                          Neighborhood:
+                          
+                        </h2>
+                        
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Set {},
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Map {},
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="collapsible-title-container"
+                  >
+                    <div
+                      class="collapsible-title-inner-layout"
+                    >
+                      <h2
+                        class="collapsible-title-collapsed"
+                      >
+                        Neighborhood:
+                        
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 51,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 52,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 53,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 55,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 56,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": null,
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": "Neighborhood:",
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": "Neighborhood:",
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 57,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": null,
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": null,
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 1,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": "",
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": "",
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": ,
+                      "tag": 6,
+                      "treeBaseDuration": 0,
+                      "type": null,
+                      "updateQueue": null,
+                    },
+                    "stateNode": Neighborhood:,
+                    "tag": 6,
+                    "treeBaseDuration": 0,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "h2",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      "Neighborhood:",
+                      "",
+                    ],
+                    "className": "collapsible-title-collapsed",
+                    "onClick": [Function],
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      "Neighborhood:",
+                      "",
+                    ],
+                    "className": "collapsible-title-collapsed",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": null,
+                  "stateNode": <h2
+                    class="collapsible-title-collapsed"
+                  >
+                    Neighborhood:
+                    
+                  </h2>,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "h2",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 1,
+                "elementType": [Function],
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "isExpanded": false,
+                  "toggleCollapsibleTitle": [Function],
+                  "zipCode": "",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "isExpanded": false,
+                  "toggleCollapsibleTitle": [Function],
+                  "zipCode": "",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugID": 54,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": null,
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": null,
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 1,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": "",
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": "",
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": null,
+                  "stateNode": ,
+                  "tag": 6,
+                  "treeBaseDuration": 0,
+                  "type": null,
+                  "updateQueue": null,
+                },
+                "stateNode": null,
+                "tag": 0,
+                "treeBaseDuration": 0,
+                "type": [Function],
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "div",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <CollapsibleTitle
+                    isExpanded={false}
+                    toggleCollapsibleTitle={[Function]}
+                    zipCode=""
+                  />,
+                  "",
+                ],
+                "className": "collapsible-title-inner-layout",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <CollapsibleTitle
+                    isExpanded={false}
+                    toggleCollapsibleTitle={[Function]}
+                    zipCode=""
+                  />,
+                  "",
+                ],
+                "className": "collapsible-title-inner-layout",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <div
+                class="collapsible-title-inner-layout"
+              >
+                <h2
+                  class="collapsible-title-collapsed"
+                >
+                  Neighborhood:
+                  
+                </h2>
+                
+              </div>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "div",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <div
+                className="collapsible-title-inner-layout"
+              >
+                <CollapsibleTitle
+                  isExpanded={false}
+                  toggleCollapsibleTitle={[Function]}
+                  zipCode=""
+                />
+                
+              </div>,
+              "className": "collapsible-title-container",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <div
+                className="collapsible-title-inner-layout"
+              >
+                <CollapsibleTitle
+                  isExpanded={false}
+                  toggleCollapsibleTitle={[Function]}
+                  zipCode=""
+                />
+                
+              </div>,
+              "className": "collapsible-title-container",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": <div
+              class="collapsible-title-container"
+            >
+              <div
+                class="collapsible-title-inner-layout"
+              >
+                <h2
+                  class="collapsible-title-collapsed"
+                >
+                  Neighborhood:
+                  
+                </h2>
+                
+              </div>
+            </div>,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 5,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {
+            "clickedContent": "",
+            "currIndex": 0,
+            "isExpanded": false,
+            "list": Array [],
+            "showPopup": false,
+            "zipCode": "",
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {},
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 49,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="collapsible-title-container"
+                    >
+                      <div
+                        class="collapsible-title-inner-layout"
+                      >
+                        <h2
+                          class="collapsible-title-collapsed"
+                        >
+                          Neighborhood:
+                          
+                        </h2>
+                        
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Set {},
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Map {},
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="collapsible-title-container"
+                  >
+                    <div
+                      class="collapsible-title-inner-layout"
+                    >
+                      <h2
+                        class="collapsible-title-collapsed"
+                      >
+                        Neighborhood:
+                        
+                      </h2>
+                      
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Set {},
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Map {},
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={Object {}}
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "goToNextSlide": [Function],
+        "goToPrevSlide": [Function],
+        "handleContentClick": [Function],
+        "handleContentCloseClick": [Function],
+        "props": Object {},
+        "refs": Object {},
+        "state": Object {
+          "clickedContent": "",
+          "currIndex": 0,
+          "isExpanded": false,
+          "list": Array [],
+          "showPopup": false,
+          "zipCode": "",
+        },
+        "toggleCollapsibleTitle": [Function],
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="collapsible-title-container"
+        >
+          <div
+            class="collapsible-title-inner-layout"
+          >
+            <h2
+              class="collapsible-title-collapsed"
+            >
+              Neighborhood:
+              
+            </h2>
+            
+          </div>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="collapsible-title-inner-layout"
+          >
+            <CollapsibleTitle
+              isExpanded={false}
+              toggleCollapsibleTitle={[Function]}
+              zipCode=""
+            />
+            
+          </div>,
+          "className": "collapsible-title-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="collapsible-title-inner-layout"
+            >
+              <h2
+                class="collapsible-title-collapsed"
+              >
+                Neighborhood:
+                
+              </h2>
+              
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <CollapsibleTitle
+                  isExpanded={false}
+                  toggleCollapsibleTitle={[Function]}
+                  zipCode=""
+                />,
+                "",
+              ],
+              "className": "collapsible-title-inner-layout",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "isExpanded": false,
+                  "toggleCollapsibleTitle": [Function],
+                  "zipCode": "",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": <h2
+                    class="collapsible-title-collapsed"
+                  >
+                    Neighborhood:
+                    
+                  </h2>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Neighborhood:",
+                      "",
+                    ],
+                    "className": "collapsible-title-collapsed",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Neighborhood:",
+                    "",
+                  ],
+                  "type": "h2",
+                },
+                "type": [Function],
+              },
+              "",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App component renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="collapsible-title-inner-layout"
+      >
+        <CollapsibleTitle
+          isExpanded={false}
+          toggleCollapsibleTitle={[Function]}
+          zipCode=""
+        />
+        
+      </div>,
+      "className": "collapsible-title-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <CollapsibleTitle
+            isExpanded={false}
+            toggleCollapsibleTitle={[Function]}
+            zipCode=""
+          />,
+          "",
+        ],
+        "className": "collapsible-title-inner-layout",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isExpanded": false,
+            "toggleCollapsibleTitle": [Function],
+            "zipCode": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "",
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="collapsible-title-inner-layout"
+        >
+          <CollapsibleTitle
+            isExpanded={false}
+            toggleCollapsibleTitle={[Function]}
+            zipCode=""
+          />
+          
+        </div>,
+        "className": "collapsible-title-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <CollapsibleTitle
+              isExpanded={false}
+              toggleCollapsibleTitle={[Function]}
+              zipCode=""
+            />,
+            "",
+          ],
+          "className": "collapsible-title-inner-layout",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "isExpanded": false,
+              "toggleCollapsibleTitle": [Function],
+              "zipCode": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "",
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App component renders correctly 2`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "collapsible-title-container",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "collapsible-title-inner-layout",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "collapsible-title-collapsed",
+            },
+            "children": Array [
+              Object {
+                "data": "Neighborhood:",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "h2",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
+
+exports[`App component without component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="collapsible-title-inner-layout"
+      >
+        <CollapsibleTitle
+          isExpanded={false}
+          toggleCollapsibleTitle={[Function]}
+          zipCode=""
+        />
+        
+      </div>,
+      "className": "collapsible-title-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <CollapsibleTitle
+            isExpanded={false}
+            toggleCollapsibleTitle={[Function]}
+            zipCode=""
+          />,
+          "",
+        ],
+        "className": "collapsible-title-inner-layout",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isExpanded": false,
+            "toggleCollapsibleTitle": [Function],
+            "zipCode": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "",
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="collapsible-title-inner-layout"
+        >
+          <CollapsibleTitle
+            isExpanded={false}
+            toggleCollapsibleTitle={[Function]}
+            zipCode=""
+          />
+          
+        </div>,
+        "className": "collapsible-title-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <CollapsibleTitle
+              isExpanded={false}
+              toggleCollapsibleTitle={[Function]}
+              zipCode=""
+            />,
+            "",
+          ],
+          "className": "collapsible-title-inner-layout",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "isExpanded": false,
+              "toggleCollapsibleTitle": [Function],
+              "zipCode": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "",
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
