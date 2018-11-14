@@ -70,9 +70,9 @@ This project is [Jest](https://mochajs.org) and [Enzyme](https://airbnb.io/enzym
 
 ## GET /homes/:id/nearbyHomes
 
-Input : 4
+Input : <br/> 4
 
-Output: [
+Output: <br/>[
           {
             "id": 2,
             "dateOfPosting": "2018-09-19 16:13:56",
@@ -107,7 +107,7 @@ Output: [
 
 ## POST /homes
 
-Input :
+Input :  <br/>
         {
             "id": 2,
             "dateOfPosting": "2018-09-19 16:13:56",
@@ -122,8 +122,8 @@ Input :
             "stateName": "MD",
             "zipCode": "20851",
             "homeImage": "https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/assets/images/home_1.jpg"
-        }
-Output:
+        } <br/>
+Output: <br/>
         {
             "id": 2,
             "dateOfPosting": "2018-09-19 16:13:56",
@@ -142,16 +142,18 @@ Output:
 
 ## PATCH  /homes/:id/nearbyHomes
 
-Input :
+Input : <br/>
         {
             "numberOfBedroom": 2,
         }
 
-Output: success
+Output: <br/>
+success
 
 ## DELETE  /homes/:id/nearbyHomes
 
-Output: success
+Output: <br/>
+success
 
 Requests home's nearby homes information upon accessing from Zillow's designated endpoint
 
