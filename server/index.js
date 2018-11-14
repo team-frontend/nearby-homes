@@ -9,13 +9,20 @@ const port = process.env.PORT || 3003;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '../public/dist')));
+app.use('/homes/:id', express.static(path.join(__dirname, '../public/dist')));
 
-// send index.html when a GET request is sent to '/'
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.get('/homes/:id/nearbyHomes', (req, res) => {
+  const { id } = req.params;
+  homes.get(id, (err, data) => {
+    if (err) {
+      res.end(err);
+    } else {
+      res.end(JSON.stringify(data));
+    }
+  });
+});
 
-// Use Router
-app.use('/nearbyHomes', homes);
-app.use('/api/homes', homes);
 
 app.listen(port, () => {
   console.log(`server is running at: http://localhost:${port}`);
