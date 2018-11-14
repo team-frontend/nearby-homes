@@ -17,6 +17,9 @@ class App extends Component {
   }
 
   componentDidMount() {
+    let path = window.location.pathname.split('/');
+    console.log(path);
+    // let id= path[path.length-2];
     axios.get('/nearbyHomes', {}).then((homes) => {
       this.setState({
         list: homes.data,
