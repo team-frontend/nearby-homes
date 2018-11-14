@@ -71,6 +71,7 @@ This project is [Jest](https://mochajs.org) and [Enzyme](https://airbnb.io/enzym
 ## GET /homes/:id/nearbyHomes
 
 Input : 4
+
 Output: [
           {
             "id": 2,
