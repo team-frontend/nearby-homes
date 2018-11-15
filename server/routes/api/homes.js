@@ -1,6 +1,8 @@
 const express = require('express');
 const Home = require('../../../database/models/Home');
 
+var i = 0; 
+
 const router = express.Router();
 const createRandomId = () => Math.floor(Math.random() * 100) + 1;
 
