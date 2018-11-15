@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const homes = require('./routes/api/homes');
+const homes = require('./model');
 
 const app = express();
 const port = process.env.PORT || 3003;
@@ -14,7 +14,7 @@ app.use('/homes/:id', express.static(path.join(__dirname, '../public/dist')));
 
 app.get('/homes/:id/nearbyHomes', (req, res) => {
   const { id } = req.params;
-  homes.get(id, (err, data) => {
+  homes.retrieve(id, (err, data) => {
     if (err) {
       res.end(err);
     } else {

@@ -24,3 +24,8 @@ coverage
 build/
 dist/bundle.js
 
+#fake data files
+file.tsv
+file2.tsv
+file3.tsv
+zipcode.json
