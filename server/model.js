@@ -1,4 +1,4 @@
-const db = require('../database/index.js');
+const db = require('../database/postgresdb/index.js');
 
 const retrieve = (id, callback) => {
   const sql = `SELECT * FROM homes where id=${id}`;
