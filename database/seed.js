@@ -1,79 +1,47 @@
 const faker = require('faker');
-const Json2csvParser = require('json2csv').Parser;
 const fs = require('fs');
-const homes = require('./models/Home');
 
-
-const rockvilleZipCodes = [20847, 20848, 20849, 20850, 20851,
-  20852, 20853, 20854, 20857, 20877];
+const rockvilleZipCodes = [20847, 20848, 20849, 20850, 20851, 20852, 20853, 20854, 20857, 20877];
 
 const streetNames = new Set();
 faker.seed(123);
 while (streetNames.size < 1000) {
   streetNames.add(faker.address.streetName());
 }
-
 const streetArray = Array.from(streetNames);
 
-const selectRandomElement = (array) => {
-  const randomIdx = Math.floor(Math.random() * array.length);
-  return array[randomIdx];
+const columnNames = ['id', 'address', 'dateOfPosting', 'status', 'numberOfLikes', 'numberOfBathroom',
+  'numberOfBedroom', 'homeValue', 'sqft', 'cityName', 'stateName', 'zipCode', 'homeImage'];
+
+const statusName = ['FOR SALE', 'FORECLOSURE', 'AUCTION', 'OFF MARKET', 'FOR RENT', 'SOLD'];
+
+const createRandomNum = function (min, max) {
+  return Math.ceil(Math.random() * (max - min)) + (min - 1);
 };
 
-const columnNames = ['id', 'address', 'dateOfPosting', 'status',
-  'numberOfLikes', 'numberOfBathroom', 'numberOfBedroom',
-  'homeValue', 'sqft', 'streetName', 'cityName', 'stateName',
-  'zipCode', 'homeImage'];
-// const createRandomNum = () => Math.floor(Math.random() * 20) + 1;
-
-// const selectRandomPhoto = () => `https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/assets/images/home_${createRandomNum()}.jpg`;
-// Need to refactor this ^
 const createFakeHomes = function createFakeHomes() {
-  for (let j = 0; j < 10; j += 1) {
-    const fakeHomes = [];
-    for (let i = 1; i <= 10; i += 1) {
-      console.log(j); 
-      const home = {
-        address: `${i} ${streetArray[j]}`,
-        dateOfPosting: faker.date.between('2018-05-01', '2018-10-25'),
-        status: faker.random.arrayElement([
-          'FOR SALE',
-          'FORECLOSURE',
-          'AUCTION',
-          'OFF MARKET',
-          'FOR RENT',
-          'SOLD',
-        ]),
-        numberOfLikes: faker.random.number(200),
-        numberOfBathroom: faker.random.number({
-          min: 0,
-          max: 4,
-        }),
-        numberOfBedroom: faker.random.number({
-          min: 0,
-          max: 10,
-        }),
-        homeValue: faker.random.number({
-          min: 100000,
-          max: 4000000,
-        }),
-        sqft: faker.random.number({
-          min: 300,
-          max: 4000,
-        }),
-        streetName: faker.address.streetAddress(),
-        cityName: 'Rockville',
-        stateName: 'MD',
-        zipCode: selectRandomElement(rockvilleZipCodes),
-        homeImage: 'hi',
-      };
-      fakeHomes.push(home);
+  fs.writeFileSync('./data.csv', columnNames.join(','));
+  for (let j = 0; j < 1000; j += 1) {
+    let fakeHomes = '';
+    for (let i = 1; i <= 10000; i += 1) {
+      const address = `${i} ${streetArray[j]}`;
+      const dateOfPosting = `${createRandomNum(2015, 2018)}-${createRandomNum(1, 12)}-${createRandomNum(1, 31)}`;
+      const status = statusName[createRandomNum(0, 5)];
+      const numberOfLikes = createRandomNum(0, 15);
+      const numberOfBathroom = createRandomNum(1, 8);
+      const numberOfBedroom = createRandomNum(1, 8);
+      const homeValue = createRandomNum(100000, 150000000);
+      const sqft = createRandomNum(3000, 15000);
+      const cityName = 'Rockville';
+      const stateName = 'MD';
+      const zipCode = rockvilleZipCodes[createRandomNum(0, 9)];
+      const homeImage = 'IMAGE_PNG';
+      const home = `${address}, ${dateOfPosting}, ${status}, ${numberOfLikes}, ${numberOfBathroom}, ${numberOfBedroom}, ${homeValue}, ${sqft}, ${cityName}, ${stateName}, ${zipCode}, ${homeImage}`;
+
+      fakeHomes += `${home}\n`;
     }
-    const parser = new Json2csvParser(columnNames);
-    const csv = parser.parse(fakeHomes);
-    fs.appendFileSync('./data.csv', '/n'+csv);
+    fs.appendFileSync('./data.csv', fakeHomes);
   }
 };
 
 createFakeHomes();
-
