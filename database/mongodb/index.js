@@ -16,12 +16,15 @@ const homeSchema = mongoose.Schema({
   city: String,
   state: String,
   zipCode: Number,
-  latitude: Number,
-  longitude: Number,
+  location: { type: { type: String }, coordinates: [Number] },
   image: String,
 });
 
 homeSchema.index({ id: 1, name: 1 });
+homeSchema.index({ location: '2dsphere' });
 const Homes = mongoose.model('Homes', homeSchema);
 
-//mongoimport -u admin -p --db neighborhood --collection homes --type tsv --file file6.tsv --fields _id, name, datetime, status, likes, bathrooms, bedrooms, price, sqft, street, city, state, zipCode, latitude, longitude, image
+module.exports = Homes;
+
+//cat file6.tsv | awk -F$'\t' '{print "{\"_id\": "$1", \"name\": \""$2"\", \"datetime\": \""$3"\", \"status\": \""$4"\", \"likes\": "$5", \"bathrooms\": "$6", \"bedrooms\": "$7", \"price\": "$8", \"sqft\": "$9", \"street\": \""$10"\", \"city\": \""$11"\", \"state\": \""$12"\", \"zipCode\": "$13", \"location\": {\"type\": \"Point\", \"coordinates\": ["$14", "$15"]}, \"image\": \""$16"\"}"}' > newFile.json
+//mongoimport -u admin -p student --authenticationDatabase admin --db neighborhood --collection homes --file newFile.json

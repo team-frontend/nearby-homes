@@ -1,6 +1,6 @@
 const faker = require('faker');
 const fs = require('fs');
-const json = require('./../zipcode.json');
+const json = require('../fakeData/zipcode.json');
 
 const wstream = fs.createWriteStream('./file2.tsv');
 

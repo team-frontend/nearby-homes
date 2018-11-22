@@ -1,12 +1,21 @@
-const mysql = require('mysql');
+// const mysql = require('mysql');
+//
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'student',
+//   database: 'neighborhood',
+// });
+//
+// connection.connect();
+//
+// module.exports = connection;
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'student',
-  database: 'neighborhood',
-});
+const pg = require('pg');
 
-connection.connect();
+const conString = 'postgres://mona:student@localhost/neighborhood';
 
-module.exports = connection;
+const client = new pg.Client(conString);
+
+client.connect();
+module.exports = client;

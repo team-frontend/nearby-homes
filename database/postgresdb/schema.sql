@@ -21,9 +21,13 @@ CREATE TABLE IF NOT EXISTS homes(
      image VARCHAR(255) NOT NULL,
      PRIMARY KEY (id)
 )
+CREATE INDEX ON homes USING btree (name);
+CREATE INDEX ON homes USING gist (ll_to_earth(latitude, longitude));
 
 --COPY homes(name, datetime, status, likes, bathrooms, bedrooms, price, sqft, street, city, state, zipCode, latitude, longitude, image) FROM '/home/mona/hr/nearby-homes/file5.tsv';
 --cat file4.tsv | sed 's/GMT-0700 (PDT)/PST/g' |pv -l > file5.tsv
 --cat file3.tsv | tr ',' '\t' | pv -l > file4.tsv
+
+
 
 
