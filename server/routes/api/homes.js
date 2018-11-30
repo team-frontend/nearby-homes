@@ -2,17 +2,16 @@ require('newrelic');
 const express = require('express');
 const cassandra = require('cassandra-driver');
 const bodyParser = require('body-parser');
-// const assert = require('assert');
 require('circular-json');
 
 const router = express.Router();
 router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }));
 
 const { PlainTextAuthProvider } = cassandra.auth;
 const client = new cassandra.Client({ contactPoints: ['localhost'], authProvider: new PlainTextAuthProvider('cassandra', 'cassandra'), protocolOptions: { port: 9042 } });
 
-
-router.post('/homes', (req, res) => {
+router.post('/', (req, res) => {
   const homeInfo = req.body;
   const query = 'INSERT INTO neighborhood.homes (id, address, dateOfPosting, status, numberOfLikes, '
   + 'numberOfBathroom, numberOfBedroom, homeValue, sqft, cityName, stateName, zipCode, homeImage)'
@@ -23,28 +22,13 @@ router.post('/homes', (req, res) => {
     homeInfo.cityName, homeInfo.stateName, homeInfo.zipCode, homeInfo.homeImage];
 
   client.execute(query, params)
-    .then(results => res.status(200).json(results))
-    .catch(err => res.status(404).send(err));
-});
-
-router.post('/addresses', (req, res) => {
-  const homeInfo = req.body;
-  const query = 'INSERT INTO neighborhood.homes (id, address, dateOfPosting, status, numberOfLikes, '
-  + 'numberOfBathroom, numberOfBedroom, homeValue, sqft, cityName, stateName, zipCode, homeImage)'
-  + ' VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
-  const params = [homeInfo.id, homeInfo.address, homeInfo.dateOfPosting,
-    homeInfo.status, homeInfo.numberOfLikes, homeInfo.numberOfBathroom,
-    homeInfo.numberOfBedroom, homeInfo.homeValue, homeInfo.sqft,
-    homeInfo.cityName, homeInfo.stateName, homeInfo.zipCode, homeInfo.homeImage];
-
-  client.execute(query, params)
-    .then(results => res.status(200).json(results))
+    .then(() => res.status(200))
     .catch(err => res.status(404).send(err));
 });
 
 router.put('/homes/:homeid/nearbyHomes', (req, res) => {
-  const query = 'UPDATE neighborhood.homes SET id=? address=? dateOfPosting=? status=? numberOfLikes=? numberOfBathroom=?'
-  + ' numberOfBedroom=? homeValue=? sqft=? cityName=? stateName=? zipCode=? homeImage=? WHERE id = ?';
+  const query = 'UPDATE neighborhood.homes SET (id=?, address=?, dateOfPosting=?, status=?, numberOfLikes=?, numberOfBathroom=?,'
+  + ' numberOfBedroom=?, homeValue=?, sqft=?, cityName=?, stateName=?, zipCode=?, homeImage=?) WHERE id = ?';
   const currentHouse = req.params.homeid;
   const infoParams = [currentHouse.id, currentHouse.address, currentHouse.dateOfPosting,
     currentHouse.status, currentHouse.numberOfLikes,
@@ -93,8 +77,8 @@ router.delete('/addresses/:address/nearbyHomes', (req, res) => {
 
 router.get('/homes/:homeid/nearbyHomes', (req, res) => {
   const paramsOne = [req.params.homeid];
-  const queryOne = 'SELECT * FROM neighborhood.homes WHERE id = ? ALLOW FILTERING';
-  const queryTwo = 'SELECT * FROM neighborhood.homes WHERE zipCode = ? ALLOW FILTERING';
+  const queryOne = 'SELECT * FROM neighborhood.homes WHERE id = ?';
+  const queryTwo = 'SELECT * FROM neighborhood.homes WHERE zipCode = ?';
 
   client.execute(queryOne, paramsOne, { prepare: true })
     .then(results => client.execute(queryTwo, [results.rows[0].zipcode], { prepare: true }))
@@ -103,9 +87,9 @@ router.get('/homes/:homeid/nearbyHomes', (req, res) => {
 });
 
 router.get('/addresses/:address/nearbyHomes', (req, res) => {
-  const queryOne = 'SELECT * FROM neighborhood.homes WHERE address = ? ALLOW FILTERING';
+  const queryOne = 'SELECT * FROM neighborhood.homes WHERE address = ?';
   const params = (req.params.address).replace('-', ' ');
-  const queryTwo = 'SELECT * FROM neighborhood.homes WHERE zipCode = ? ALLOW FILTERING';
+  const queryTwo = 'SELECT * FROM neighborhood.homes WHERE zipcode = ?';
 
   client.execute(queryOne, params, { prepare: true })
     .then(results => client.execute(queryTwo, [results.rows[0].zipcode], { prepare: true }))

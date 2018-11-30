@@ -41,6 +41,7 @@
     "assert": "^1.4.1",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "cassandra": "^0.1.0",
     "cassandra-driver": "^3.5.0",
     "circular-json": "^0.5.9",
     "cqlsh-node": "^1.0.6",
