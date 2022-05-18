@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 // Use Router
 app.use('/nearbyHomes', homes);
 app.use('/api/homes', homes);
-
+app.use('/api/nothing', homes);
 app.listen(port, () => {
   console.log(`server is running at: http://localhost:${port}`);
 });
